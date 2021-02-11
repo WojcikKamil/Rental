@@ -2,21 +2,22 @@
 
 Reupload z https://github.com/WojcikKamil/RentalShop
 
-TEORETYCZNIE :
 
-Pycharm najpierw powinien zobaczyc pliczek requirements.txt, po czym subtelnie spytać, 
-czy skonfigurować środowisko według tego pliczku. ALE...............
+## Technologies
+*Django
+*Python
 
-pip install django
+## Setup
+1. Clone the repository.
+2. Install required Python dependencies: 
 
-pip install -r requirements.py
+    `pip install -r requirements.txt`
+    `pip install django`
+    `pip install pillow`
+    
+3. Start the application
+    `python manage.py runserver`
+ it should work now, if NOT report a problem to - *idontfucking@care.com
 
-pip install pillow
-
-Aby włączyć server - 
-
-python manage.py runserver
-
-GLHF, już chyba działa.
-
-A jak nie działa, to wysłać zgłoszenie na : gownomnieto@obchodzi.pl
+4. Open the browser and go to the given url.
+5. Enjoy yourself 
