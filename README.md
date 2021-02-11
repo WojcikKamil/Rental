@@ -19,7 +19,7 @@ Reupload from https://github.com/WojcikKamil/RentalShop
 ```
     python manage.py runserver
 ```
- it should work now, if NOT report a problem to * idontfucking@care.com
+ it should work now, if NOT report a problem to - idontfucking@care.com
 
 4. Open the browser and go to the given url.
 5. Enjoy yourself 
