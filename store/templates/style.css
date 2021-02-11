@@ -1,0 +1,37 @@
+body {
+	background: #000;
+}
+#widget {
+	width: 780px;
+	height: 480px;
+	font: normal 10px verdana;
+	text-align: center;
+	margin: 40px auto;
+	border: 5px #aaa;
+	border-style: outset inset inset outset;
+	background: url(http://www.grsites.com/textures/misc/misc142.jpg);
+}
+form {
+	width: 98%;
+	margin: 200px 0 60px 0;
+}
+select {
+	width: 190px;
+	font: normal 11px verdana;
+	color: #fff;
+	background: #000;
+}
+#txtregion {
+	width: 98%;
+	height: 16px;
+	font: normal 12px verdana;
+	letter-spacing: .4em;
+	margin: auto;
+	border-bottom: 1px black solid;
+}
+#txtplacename {
+	width: 98%;
+	height: 16px;
+	font: normal 10px verdana;
+	margin: auto;
+}
