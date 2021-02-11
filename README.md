@@ -12,8 +12,6 @@ Reupload from https://github.com/WojcikKamil/RentalShop
 2. Install required Python dependencies: 
 ```
     pip install -r requirements.txt
-    pip install django
-    pip install pillow
 ```
 3. Start the application
 ```
