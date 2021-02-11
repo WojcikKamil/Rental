@@ -1,11 +1,11 @@
 # Rental
 
-Reupload z https://github.com/WojcikKamil/RentalShop
+Reupload from https://github.com/WojcikKamil/RentalShop
 
 
 ## Technologies
-*Django
-*Python
+* Django
+* Python
 
 ## Setup
 1. Clone the repository.
