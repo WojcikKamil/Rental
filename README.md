@@ -1,16 +1,20 @@
 # Rental
 
+Reupload z https://github.com/WojcikKamil/RentalShop
 
 TEORETYCZNIE :
 
-otwieramy projekt w frameworku odpowiednim do tego
+Pycharm najpierw powinien zobaczyc pliczek requirements.txt, po czym subtelnie spytać, 
+czy skonfigurować środowisko według tego pliczku. ALE...............
 
 pip install django
 
 pip install -r requirements.py
 
+pip install pillow
+
 Aby włączyć server - 
 
 python manage.py runserver
 
-GLHF
+GLHF, już chyba działa.
