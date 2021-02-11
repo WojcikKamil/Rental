@@ -18,3 +18,5 @@ Aby włączyć server -
 python manage.py runserver
 
 GLHF, już chyba działa.
+
+A jak nie działa, to wysłać zgłoszenie na :gownomnieto@obchodzi.pl
