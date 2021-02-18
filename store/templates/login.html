@@ -2,10 +2,10 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container"  style="margin-left: 38%">
     <div class="p-4 m4">
         <div class="col-lg-4 mt-4 mb-4 mx-auto border rounded pt-4">
-            <h3 class="alert alert-light mt-4 mb-4 border rounded">Login</h3>
+            <h2 class="alert alert-light mt-4 mb-4" style="text-align: center;">Login</h2>
             <form action="/login" method="POST">
                  {% csrf_token %} 
                  {% if error %}
@@ -15,22 +15,22 @@
                  {% endif %}
                      <!-- email -->
             <div class = "form-group">
-                <label for="">Email</label>
+                <label for="" style="margin-left: 44%">Email</label>
                 <input required type="email" name="email" id=""
                 class="form-control-sm form-control" value="{{values.email}}"
                 placeholder="example@mail.com">
             </div>
                      <!-- password -->
             <div class = "form-group">
-                <label for="">Password</label>
+                <label for="" style="margin-left: 40%">Password</label>
                 <input type="password" name="password" id="" class="form-control form-control-sm"
                 placeholder="***** ***">
             </div>
                     <!--Login button-->
-            <div class="form-group">
+            <div class="form-group" style="text-align: center">
                 <input class= "btn btn-sm btn-info" 
                 type="submit" 
-                value= "Login">
+                value= "Login" style="background-color: #00d1b2">
             </div>
             </form>
         </div>
