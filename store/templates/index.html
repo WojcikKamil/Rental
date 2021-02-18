@@ -35,7 +35,7 @@
     {% for product in products %}
 
     <div class="card mx-auto mb-3" id="{{product.id}}" style="width: 30rem;">
-      <img src="{{product.image.url}}" class="card-img-top" alt="...">
+      <img src="{{product.image.url}}" style="width: 283px; height: 382px" class="card-img-top" alt="...">
       <div class="card-body">
           <p class="card-title"><b>{{product.name}}</b></p>
           <p class="card-text">{{product.description}}</p>
