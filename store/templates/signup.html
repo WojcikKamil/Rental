@@ -2,10 +2,10 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container" style="margin-left: 38%">
     <div class="p-4 m4">
-        <div class="col-lg-5 mx-auto border rounded pt-4">
-            <h3 class="alert alert-light border rounded">Create An Account</h3>
+        <div class="col-lg-4 mx-auto border rounded pt-4">
+            <h2 class="alert alert-light" style="text-align: center">Sign Up</h2>
             <form action="/signup" method="POST">
 
                  {% csrf_token %} 
@@ -60,8 +60,8 @@
             </div>
 
 
-            <div class="form-group">
-                <input class= "btn btn-sm btn-info" type="submit" value= "Create an account">
+            <div class="form-group" style="text-align: center;">
+                <input class= "btn btn-sm btn-info" type="submit" value= "Create an account"  style="background-color: #00d1b2; text-align: center;">
             </div>
             
             </form>
