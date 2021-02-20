@@ -9,7 +9,6 @@ from store.models.payment import Payment
 
 class CheckOut(View):
     def post(self, request):
-        address = request.POST.get('address')
         phone = request.POST.get('phone')
         customer = request.session.get('customer')
         cart = request.session.get('cart')

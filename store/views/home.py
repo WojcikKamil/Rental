@@ -47,4 +47,4 @@ class Index(View):
         data['products'] = products
         data['categories'] = categories
         print(request.session.get('email'))
-        return render(request, 'index.html', data)
+        return render(request, 'index/index.html', data)

@@ -7,7 +7,7 @@ from django.views import View
 class Login(View):
     def get(self, request):
         Login.return_url = request.GET.get('return_url')
-        return render(request, 'login.html')
+        return render(request, 'login/login.html')
 
     def post(self, request):
         email = request.POST.get('email')
@@ -30,7 +30,7 @@ class Login(View):
         else:
             error_message = 'Email or Password invalid!'
         print(email, password)
-        return render(request, 'login.html', {'error': error_message})
+        return render(request, 'login/login.html', {'error': error_message})
 
 def logout(request):
     request.session.clear()
