@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    "/Rental/store/static"
+    "store/static"
 ]
 
 # Application definition
