@@ -1,0 +1,21 @@
+#storeImage {
+    height: 80px;
+}
+
+#btnCart {
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: #00d1b2;
+    color: white;
+    font-weight: bold;
+}
+
+#checkoutCaption {
+    margin-left: 90%;
+    margin-right: 90%;
+}
+
+#btnPurchase {
+    margin-left: 40%;
+    margin-right: 40%;
+}

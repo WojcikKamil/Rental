@@ -1,0 +1,11 @@
+#container {
+    margin-left: 38%;
+}
+
+#loginCaption, #loginBtn {
+    text-align: center;
+}
+
+#loginBtnInput {
+    background-color: #00d1b2;
+}
