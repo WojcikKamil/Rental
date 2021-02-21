@@ -12,4 +12,4 @@ class OrderView(View):
         customer = request.session.get('customer')
         orders = Order.get_orders_by_customer(customer)
         orders = orders.reverse()
-        return render(request, 'orders.html', {'orders': orders})
+        return render(request, 'orders/orders.html', {'orders': orders})

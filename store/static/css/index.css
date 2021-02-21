@@ -1,0 +1,18 @@
+#productImage {
+    width: 283px;
+    height: 382px;
+}
+
+#footerCaption {
+    color: white;
+    font-size: 16px;
+    font-family: Arial;
+    text-align: center;
+    padding: 25px;
+}
+
+footer {
+    background-color: #333333;
+    height: 72px;
+    margin-top: 400px
+}

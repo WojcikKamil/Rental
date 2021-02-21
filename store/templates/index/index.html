@@ -1,0 +1,95 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+{% load cart %}
+
+{% load custom_filter %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+<!-- body -->
+<div class="container-fluid mt-3">
+    <div class="row">
+
+        <!--filter-->
+        <div class="col-lg-2 mx-auto">
+            <div class="list-group">
+
+                <a href="/"
+                   class="list-group-item
+        list-group-item-action">All Movies</a>
+
+                {% for category in categories %}
+
+                <a href="/?category={{category.id}}"
+                   class="list-group-item
+        list-group-item-action">{{category.name}} </a>
+
+                {% endfor %}
+
+            </div>
+        </div>
+        <!--all products-->
+        <div id='products' class="col-lg-9 mx-auto">
+            <div class="row mx-auto">
+
+                {% for product in products %}
+
+                <div class="card mx-auto mb-3" id="{{product.id}}" style="width: 30rem;">
+                    <img src="{{product.image.url}}" id="productImage" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title"><b>{{product.name}}</b></p>
+                        <p class="card-text">{{product.description}}</p>
+                        <p class="card-text"><b>Only {{product.price|currency}} per week</b></p>
+                    </div>
+
+                    <div class="card-footer p-0 no-gutters">
+
+                        {% if product|is_in_cart:request.session.cart %}
+
+                        <div class="row no-gutters">
+                            <form action="/" class="col-2" method="post">
+                                {% csrf_token %}
+                                <input hidden type="text" name='product' value='{{product.id}}'>
+                                <input hidden type="text" name='remove' value='-1'>
+                                <input type="submit" value="-" class="btn btn-block btn-secondary">
+                            </form>
+
+                            <div class="text-center col">Rent for {{product|rental_time:request.session.cart}} weeks
+                            </div>
+                            <form action="/" class="col-2" method="post">
+                                {% csrf_token %}
+                                <input hidden type="text" name='product' value='{{product.id}}'>
+                                <input type="submit" value="+" class="btn btn-block btn-secondary">
+                            </form>
+                        </div>
+
+                        {% else %}
+
+                        <form action="/#{{product.id}}" method="POST" class="btn-block">
+
+                            {% csrf_token %}
+
+                            <input hidden type="text" name='product' value='{{product.id}}'>
+                            <input type="submit" class="float-right btn btn-light border form-control"
+                                   value="Rent" style="margin-bottom: 10px">
+                        </form>
+
+                        {% endif %}
+
+                    </div>
+                </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer>
+    <p id="footerCaption"> 2021 © Developed by : Maria Urban, Rafał Czytajło, Kacper Żmijak, Kamil Wójcik<br></p>
+</footer>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+<div class="container" id="container">
+    <div class="p-4 m4">
+        <div class="col-lg-4 mt-4 mb-4 mx-auto border rounded pt-4">
+            <h2 class="alert alert-light mt-4 mb-4" id="loginCaption">Login</h2>
+            <form action="/login" method="POST">
+                {% csrf_token %}
+                {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    {{error}}
+                </div>
+                {% endif %}
+                <!-- email -->
+                <div class="form-group">
+                    <label>Email</label>
+                    <input required type="email" name="email"
+                           class="form-control-sm form-control" value="{{values.email}}"
+                           placeholder="example@mail.com">
+                </div>
+                <!-- password -->
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control form-control-sm"
+                           placeholder="***** ***">
+                </div>
+                <!--Login button-->
+                <div class="form-group" id="loginBtn">
+                    <input class="btn btn-sm btn-info"
+                           type="submit"
+                           value="Login" id="loginBtnInput">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
