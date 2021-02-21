@@ -1,8 +1,9 @@
 # Rental
-<div align="center">
+Reupload from https://github.com/WojcikKamil/RentalShop
+<div align="left">
 <img src="https://cdn.pixabay.com/photo/2012/04/26/14/04/vhs-42554_960_720.png" width="300" height="200" />
 </div>
-Reupload from https://github.com/WojcikKamil/RentalShop
+
 
 
 ## General Information
