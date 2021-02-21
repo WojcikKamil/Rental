@@ -50,4 +50,4 @@ Website built in Django and styled with HTML and CSS. Allows user to create acco
 * [@Maria Urban](https://github.com/Ethalya)
 * [@Rafał Czytajło](https://github.com/czytus)
 * [@Kacper Żmijak](https://github.com/kzmijak)
-* [@Kamil Wójcik](https://github.com/MitsuruKasahara) & [@Kamil Wójcik](https://github.com/WojcikKamil)
+* [@Kamil Wójcik](https://github.com/MitsuruKasahara) & [@Kamil Wójcik](https://github.com/WojcikKamil) (split personality)
